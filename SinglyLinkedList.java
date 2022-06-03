@@ -54,7 +54,7 @@ public class SinglyLinkedList<E> {
         
         public void addFirst(E e) {
             head = new Node<>(e,head);
-            if(size == 0) {
+            if(isEmpty() {
                 tail = head;
             }
             size++;
@@ -79,7 +79,7 @@ public class SinglyLinkedList<E> {
             E answer = head.getElement();
             head = head.getNext();
             size--;
-            if(size == 0) {
+            if(isEmpty()) {
                 tail = null;
             }
             return answer;
