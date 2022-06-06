@@ -54,7 +54,7 @@ public class SinglyLinkedList<E> {
         
         public void addFirst(E e) {
             head = new Node<>(e,head);
-            if(isEmpty() {
+            if(isEmpty()) {
                 tail = head;
             }
             size++;
