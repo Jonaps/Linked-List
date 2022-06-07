@@ -49,6 +49,12 @@ public class CircularlyLinkedList<E> {
         }
     }
     
+    public void rotate() {
+        if(tail != null) {
+            tail = tail.getNext();
+        }
+    }
+    
     public void addFirst(E e) {
         if(isEmpty()) {
             tail = new Node<>(e,null);
