@@ -76,7 +76,7 @@ public class CircularlyLinkedList<E> {
         tail = tail.getNext();
     }
     
-    public E removeFirst(E e) {
+    public E removeFirst() {
         if(isEmpty()) {
             return null;
         }
