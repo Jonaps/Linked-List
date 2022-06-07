@@ -31,6 +31,10 @@ public class CircularlyLinkedList<E> {
         return size == 0;
     }
     
+    public int size() {
+        return size;
+    }
+    
     public E first() {
         if(isEmpty()) {
             return null;
